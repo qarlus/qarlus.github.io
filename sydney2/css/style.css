@@ -1,0 +1,168 @@
+:root {
+    color-scheme: light;
+    --fur: #ffffff;
+    --eye-blue: #34a7d9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    background: var(--fur);
+    overflow: hidden;
+}
+
+.xatspace {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--fur);
+    overflow: hidden;
+}
+
+.cinnamoroll {
+    display: block;
+    width: min(100vw, 100vh);
+    max-width: 980px;
+    height: auto;
+    overflow: visible;
+    transform: translate3d(var(--tilt-x, 0), var(--tilt-y, 0), 0);
+    transition: transform 140ms ease-out;
+}
+
+.eyes {
+    animation: float-eyes 5.5s ease-in-out infinite;
+    transform-origin: 500px 500px;
+}
+
+.eye-track {
+    transform: translate(var(--eye-x, 0), var(--eye-y, 0));
+    transition: transform 90ms ease-out;
+}
+
+.eye {
+    fill: url("#eye-fill");
+}
+
+.eye-shine {
+    fill: rgba(255, 255, 255, 0.92);
+    pointer-events: none;
+}
+
+.eyelid {
+    fill: var(--fur);
+    pointer-events: none;
+}
+
+.eyelid-upper {
+    animation: upper-lid 5.4s ease-in-out infinite;
+}
+
+.eyelid-lower {
+    animation: lower-lid 5.4s ease-in-out infinite;
+}
+
+.eye-track-right .eyelid-upper,
+.eye-track-right .eyelid-lower {
+    animation-delay: 0.06s;
+}
+
+.signature {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    z-index: 2;
+    opacity: 0.18;
+    transform: translateX(-50%);
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+}
+
+.signature:hover {
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.signature img {
+    display: block;
+    width: auto;
+    height: 24px;
+    filter: none;
+}
+
+@keyframes float-eyes {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes upper-lid {
+    0%,
+    3%,
+    8%,
+    58%,
+    64%,
+    100% {
+        transform: translateY(0);
+    }
+
+    5%,
+    60% {
+        transform: translateY(86px);
+    }
+}
+
+@keyframes lower-lid {
+    0%,
+    3%,
+    8%,
+    58%,
+    64%,
+    100% {
+        transform: translateY(0);
+    }
+
+    5%,
+    60% {
+        transform: translateY(-86px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .eyes,
+    .eyelid-upper,
+    .eyelid-lower {
+        animation: none;
+    }
+
+    .cinnamoroll,
+    .eye-track {
+        transition: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .cinnamoroll {
+        width: 112vw;
+    }
+
+    .signature {
+        bottom: 18px;
+    }
+}

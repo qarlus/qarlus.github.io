@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sydney 2</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="xatspace" aria-label="Sydney Cinnamoroll inspired xatspace">
+            <svg
+                class="cinnamoroll"
+                viewBox="0 0 1000 1000"
+                role="img"
+                aria-labelledby="cinnamoroll-title cinnamoroll-desc"
+            >
+                <title id="cinnamoroll-title">Cinnamoroll baby-blue eyes</title>
+                <desc id="cinnamoroll-desc">
+                    Two baby-blue Cinnamoroll inspired eyes on a pure white background.
+                </desc>
+
+                <defs>
+                    <linearGradient id="eye-fill" x1="18%" y1="8%" x2="82%" y2="92%">
+                        <stop offset="0%" stop-color="#89cff0" />
+                        <stop offset="58%" stop-color="#4cb4f0" />
+                        <stop offset="100%" stop-color="#34a7d9" />
+                    </linearGradient>
+
+                    <clipPath id="left-eye-clip">
+                        <ellipse cx="430" cy="500" rx="32" ry="54" />
+                    </clipPath>
+
+                    <clipPath id="right-eye-clip">
+                        <ellipse cx="570" cy="500" rx="32" ry="54" />
+                    </clipPath>
+                </defs>
+
+                <g class="eyes" aria-hidden="true">
+                    <g class="eye-track eye-track-left" clip-path="url(#left-eye-clip)">
+                        <ellipse class="eye" cx="430" cy="500" rx="32" ry="54" />
+                        <ellipse class="eye-shine" cx="444" cy="478" rx="8" ry="13" />
+                        <rect class="eyelid eyelid-upper" x="390" y="360" width="80" height="66" rx="33" />
+                        <rect class="eyelid eyelid-lower" x="390" y="574" width="80" height="66" rx="33" />
+                    </g>
+
+                    <g class="eye-track eye-track-right" clip-path="url(#right-eye-clip)">
+                        <ellipse class="eye" cx="570" cy="500" rx="32" ry="54" />
+                        <ellipse class="eye-shine" cx="584" cy="478" rx="8" ry="13" />
+                        <rect class="eyelid eyelid-upper" x="530" y="360" width="80" height="66" rx="33" />
+                        <rect class="eyelid eyelid-lower" x="530" y="574" width="80" height="66" rx="33" />
+                    </g>
+                </g>
+            </svg>
+
+            <a class="signature" href="https://xat.me/umbreon" target="_blank" rel="noopener noreferrer">
+                <img src="signature.svg" alt="by karl" />
+            </a>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
