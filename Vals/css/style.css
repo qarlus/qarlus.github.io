@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-family: "Arial", sans-serif;
+    background:
+        linear-gradient(rgba(2, 2, 2, 0.35), rgba(2, 2, 2, 0.35)),
+        url("../background.png") center / cover no-repeat;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 42%, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.62) 72%),
+        linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.42));
+    pointer-events: none;
+}
+
+.hero-stage {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 32px 24px 96px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-emblem {
+    width: min(72vw, 360px);
+    max-width: 100%;
+    aspect-ratio: 440 / 500;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hero-emblem::before {
+    content: "";
+    position: absolute;
+    inset: 14%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 70%);
+    filter: blur(12px);
+    pointer-events: none;
+}
+
+.crest-mark {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.12));
+}
+
+.crown-layer,
+.crest-layer {
+    transform-origin: center;
+}
+
+.crown-layer {
+    opacity: 1;
+}
+
+.crest-layer {
+    opacity: 1;
+}
+
+.signature {
+    position: fixed;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 126px;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.signature img {
+    width: 126px;
+    height: auto;
+}
+
+.signature:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .hero-stage {
+        padding-top: 24px;
+        padding-bottom: 84px;
+    }
+
+    .hero-emblem {
+        width: min(82vw, 300px);
+    }
+}
