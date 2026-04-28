@@ -3,57 +3,665 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sydney 2</title>
+        <title>Cinnamoroll Test</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <main class="xatspace" aria-label="Sydney Cinnamoroll inspired xatspace">
+        <main class="stage" aria-label="Sydney Cinnamoroll cloud animation">
             <svg
-                class="cinnamoroll"
-                viewBox="0 0 1000 1000"
+                class="scene"
+                viewBox="0 0 960 540"
                 role="img"
-                aria-labelledby="cinnamoroll-title cinnamoroll-desc"
+                aria-labelledby="scene-title scene-desc"
+                preserveAspectRatio="xMidYMid slice"
             >
-                <title id="cinnamoroll-title">Cinnamoroll</title>
+                <title id="scene-title">Sydney Cinnamoroll cloud animation</title>
+                <desc id="scene-desc">
+                    A custom pastel SVG scene with Cinnamoroll resting on clouds under a moonlit sky.
+                </desc>
 
                 <defs>
-                    <linearGradient id="eye-fill" x1="18%" y1="8%" x2="82%" y2="92%">
-                        <stop offset="0%" stop-color="#89cff0" />
-                        <stop offset="58%" stop-color="#4cb4f0" />
-                        <stop offset="100%" stop-color="#34a7d9" />
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#3347df" />
+                        <stop offset="0.42" stop-color="#5268f3" />
+                        <stop offset="0.74" stop-color="#66aaf8" />
+                        <stop offset="1" stop-color="#8ad9ff" />
                     </linearGradient>
 
-                    <clipPath id="left-eye-clip">
-                        <ellipse cx="430" cy="500" rx="32" ry="54" />
-                    </clipPath>
+                    <linearGradient id="sky-brush" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#3447d8" stop-opacity="0.32" />
+                        <stop offset="1" stop-color="#739fff" stop-opacity="0.12" />
+                    </linearGradient>
 
-                    <clipPath id="right-eye-clip">
-                        <ellipse cx="570" cy="500" rx="32" ry="54" />
-                    </clipPath>
+                    <radialGradient id="moon-sky-haze" cx="23%" cy="24%" r="26%">
+                        <stop offset="0" stop-color="#fff0b2" stop-opacity="0.16" />
+                        <stop offset="0.5" stop-color="#b4ddff" stop-opacity="0.09" />
+                        <stop offset="1" stop-color="#7aa8ff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="upper-sky-haze" cx="58%" cy="13%" r="62%">
+                        <stop offset="0" stop-color="#9ed4ff" stop-opacity="0.13" />
+                        <stop offset="0.48" stop-color="#c5a8ff" stop-opacity="0.06" />
+                        <stop offset="1" stop-color="#4657e8" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="soft-violet-band" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#89f2ff" stop-opacity="0" />
+                        <stop offset="0.34" stop-color="#b8d8ff" stop-opacity="0.2" />
+                        <stop offset="0.6" stop-color="#f3b6ff" stop-opacity="0.13" />
+                        <stop offset="1" stop-color="#8af4ff" stop-opacity="0" />
+                    </linearGradient>
+
+                    <radialGradient id="star-soft-fill" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#fffde6" stop-opacity="1" />
+                        <stop offset="0.54" stop-color="#d5fbff" stop-opacity="0.78" />
+                        <stop offset="1" stop-color="#d5fbff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="cloud-a" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#95f2ff" />
+                        <stop offset="1" stop-color="#66b6ee" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-b" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#76dcff" />
+                        <stop offset="1" stop-color="#5aa8ef" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-pink" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#ffc4ef" />
+                        <stop offset="1" stop-color="#f39bdc" />
+                    </linearGradient>
+
+                    <linearGradient id="fur" x1="0.2" y1="0" x2="0.82" y2="1">
+                        <stop offset="0" stop-color="#cbfaff" />
+                        <stop offset="0.42" stop-color="#c0efff" />
+                        <stop offset="0.78" stop-color="#badff7" />
+                        <stop offset="1" stop-color="#f1c3ed" />
+                    </linearGradient>
+
+                    <linearGradient id="fur-soft" x1="0.12" y1="0" x2="0.85" y2="1">
+                        <stop offset="0" stop-color="#e8ffff" stop-opacity="0.88" />
+                        <stop offset="0.58" stop-color="#b9efff" stop-opacity="0.58" />
+                        <stop offset="1" stop-color="#f4bde9" stop-opacity="0.48" />
+                    </linearGradient>
+
+                    <linearGradient id="front-ear-fur" x1="0.25" y1="0" x2="0.72" y2="1">
+                        <stop offset="0" stop-color="#d7ffff" />
+                        <stop offset="0.46" stop-color="#c6f2ff" />
+                        <stop offset="0.78" stop-color="#bddff7" />
+                        <stop offset="1" stop-color="#f0c2ed" />
+                    </linearGradient>
+
+                    <linearGradient id="ear-inner" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#f8c5f0" />
+                        <stop offset="0.52" stop-color="#eeb7ea" />
+                        <stop offset="1" stop-color="#aef8ff" />
+                    </linearGradient>
+
+                    <radialGradient id="moon-fill" cx="34%" cy="28%" r="78%">
+                        <stop offset="0" stop-color="#fffde2" />
+                        <stop offset="0.55" stop-color="#fff5af" />
+                        <stop offset="1" stop-color="#efd96e" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-gold-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#fffad3" stop-opacity="0.95" />
+                        <stop offset="1" stop-color="#fff074" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-cyan-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#bafcff" stop-opacity="0.82" />
+                        <stop offset="0.56" stop-color="#a7f6ff" stop-opacity="0.28" />
+                        <stop offset="1" stop-color="#8ff5ff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-pink-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#ffd3f3" stop-opacity="0.72" />
+                        <stop offset="0.58" stop-color="#ffc4ed" stop-opacity="0.24" />
+                        <stop offset="1" stop-color="#ffb4e6" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="sparkle-ribbon-gradient" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#bffbff" stop-opacity="0" />
+                        <stop offset="0.32" stop-color="#bffbff" stop-opacity="0.72" />
+                        <stop offset="0.62" stop-color="#fff8b8" stop-opacity="0.92" />
+                        <stop offset="1" stop-color="#ffccef" stop-opacity="0" />
+                    </linearGradient>
+
+                    <filter id="cloud-soft" x="-5%" y="-10%" width="110%" height="125%">
+                        <feTurbulence baseFrequency="0.014" numOctaves="2" seed="13" type="fractalNoise" result="noise" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.1" />
+                    </filter>
+
+                    <filter id="sky-soft" x="-12%" y="-12%" width="124%" height="124%">
+                        <feGaussianBlur stdDeviation="8" />
+                    </filter>
+
+                    <filter id="ambient-star-glow" x="-160%" y="-160%" width="420%" height="420%">
+                        <feGaussianBlur stdDeviation="2.2" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.72  0 1 0 0 0.92  0 0 1 0 1  0 0 0 0.42 0"
+                            result="halo"
+                        />
+                        <feMerge>
+                            <feMergeNode in="halo" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="moon-glow" x="-110%" y="-110%" width="320%" height="320%">
+                        <feGaussianBlur stdDeviation="7.5" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 1  0 1 0 0 0.86  0 0 1 0 0.32  0 0 0 0.58 0"
+                            result="glow"
+                        />
+                        <feMerge>
+                            <feMergeNode in="glow" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="fur-glow" x="-35%" y="-45%" width="170%" height="190%">
+                        <feGaussianBlur stdDeviation="3.2" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.9  0 1 0 0 0.88  0 0 1 0 0.45  0 0 0 0.5 0"
+                            result="warm"
+                        />
+                        <feMerge>
+                            <feMergeNode in="warm" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="star-glow" x="-130%" y="-130%" width="360%" height="360%">
+                        <feGaussianBlur stdDeviation="4.4" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.72  0 1 0 0 0.94  0 0 1 0 1  0 0 0 0.62 0"
+                            result="halo"
+                        />
+                        <feMerge>
+                            <feMergeNode in="halo" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
                 </defs>
 
-                <g class="eyes" aria-hidden="true">
-                    <g class="eye-track eye-track-left" clip-path="url(#left-eye-clip)">
-                        <ellipse class="eye" cx="430" cy="500" rx="32" ry="54" />
-                        <ellipse class="eye-shine" cx="444" cy="478" rx="8" ry="13" />
-                        <rect class="eyelid eyelid-upper" x="390" y="360" width="80" height="66" rx="33" />
-                        <rect class="eyelid eyelid-lower" x="390" y="574" width="80" height="66" rx="33" />
+                <rect x="-1100" y="-300" width="3160" height="1080" fill="url(#sky)" />
+
+                <g class="sky-atmosphere">
+                    <rect x="-1100" y="-300" width="3160" height="1080" fill="url(#upper-sky-haze)" />
+                    <rect x="-1100" y="-300" width="3160" height="1080" fill="url(#moon-sky-haze)" />
+                    <g filter="url(#sky-soft)" opacity="0.72">
+                        <path
+                            class="sky-band band-one"
+                            d="M-1100 102C-954 66 -810 76 -668 114C-526 78 -378 84 -230 122C-84 80 76 86 220 124C360 88 504 94 642 128C786 92 936 96 1082 130C1236 94 1398 101 1542 136C1708 98 1904 108 2060 150V220C1888 174 1700 170 1534 153C1384 178 1228 160 1084 164C932 144 788 178 642 146C500 157 362 161 224 140C84 155 -70 146 -226 152C-378 160 -528 136 -674 156C-820 140 -960 146 -1100 168Z"
+                            fill="url(#soft-violet-band)"
+                        />
+                        <path
+                            class="sky-band band-two"
+                            d="M-1100 202C-962 164 -820 174 -684 210C-544 172 -402 176 -256 216C-112 176 46 184 190 224C330 184 480 190 622 232C760 194 930 202 1094 244C1242 204 1404 214 1548 258C1710 220 1900 232 2060 282V346C1880 292 1708 284 1542 286C1388 260 1242 270 1092 274C930 252 778 280 622 250C474 265 330 266 188 242C42 258 -108 248 -254 255C-412 266 -552 242 -690 260C-834 246 -964 250 -1100 278Z"
+                            fill="#89eaff"
+                            opacity="0.16"
+                        />
+                    </g>
+                </g>
+
+                <g class="ambient-stars" filter="url(#ambient-star-glow)">
+                    <g class="star-depth star-depth-back">
+                        <circle class="ambient-dot twinkle-slow" cx="41" cy="102" r="1.8" fill="#fff7b6" />
+                        <circle class="ambient-dot twinkle-soft" cx="172" cy="41" r="1.4" fill="#c8fbff" />
+                        <circle class="ambient-dot twinkle-soft" cx="500" cy="7" r="1.7" fill="#c9f8ff" />
+                        <circle class="ambient-dot twinkle-slow" cx="632" cy="55" r="1.3" fill="#fffbe0" />
+                        <circle class="ambient-dot twinkle-soft" cx="878" cy="34" r="1.8" fill="#d8fbff" />
+                        <circle class="ambient-dot twinkle-slow" cx="918" cy="126" r="1.2" fill="#fff6ba" />
+                    </g>
+                    <g class="star-depth star-depth-front">
+                        <path
+                            class="ambient-star twinkle-bright"
+                            d="M0 -10C2 -3.6 3.6 -2 10 0C3.6 2 2 3.6 0 10C-2 3.6 -3.6 2 -10 0C-3.6 -2 -2 -3.6 0 -10Z"
+                            transform="translate(83 158)"
+                            fill="#f7fbff"
+                        />
+                        <path
+                            class="ambient-star twinkle-soft"
+                            d="M0 -7C1.4 -2.7 2.7 -1.4 7 0C2.7 1.4 1.4 2.7 0 7C-1.4 2.7 -2.7 1.4 -7 0C-2.7 -1.4 -1.4 -2.7 0 -7Z"
+                            transform="translate(386 139)"
+                            fill="#c7fbff"
+                        />
+                        <path
+                            class="ambient-star twinkle-bright"
+                            d="M0 -12C2.4 -4.2 4.2 -2.4 12 0C4.2 2.4 2.4 4.2 0 12C-2.4 4.2 -4.2 2.4 -12 0C-4.2 -2.4 -2.4 -4.2 0 -12Z"
+                            transform="translate(673 138)"
+                            fill="#fffbe6"
+                        />
+                        <path
+                            class="ambient-star twinkle-soft"
+                            d="M0 -8C1.6 -3 3 -1.6 8 0C3 1.6 1.6 3 0 8C-1.6 3 -3 1.6 -8 0C-3 -1.6 -1.6 -3 0 -8Z"
+                            transform="translate(826 89)"
+                            fill="#c8fbff"
+                        />
+                    </g>
+                </g>
+
+                <g class="sky-brushes" filter="url(#cloud-soft)">
+                    <path
+                        d="M-1100 88C-958 50 -808 68 -672 104C-532 66 -388 74 -250 110C-108 70 42 78 184 116C326 74 486 72 632 108C780 68 934 82 1082 116C1236 80 1394 86 1540 126C1712 90 1900 96 2060 132V246H-1100Z"
+                        fill="url(#sky-brush)"
+                    />
+                    <path
+                        d="M-1100 214C-960 180 -816 188 -680 224C-540 186 -398 194 -260 232C-112 190 44 200 184 238C326 196 480 208 628 246C770 204 930 214 1088 256C1240 220 1398 232 1546 276C1710 238 1900 248 2060 292V358H-1100Z"
+                        fill="#435beb"
+                        opacity="0.34"
+                    />
+                </g>
+
+                <g class="moon-stars">
+                    <g class="moon" filter="url(#moon-glow)">
+                        <path
+                            class="moon-crescent"
+                            d="M217.2 97.8A40 40 0 1 0 255.6 165.8A43 43 0 0 1 217.2 97.8Z"
+                            fill="url(#moon-fill)"
+                        />
+                        <path
+                            class="moon-inner-rim"
+                            d="M255.6 165.8A43 43 0 0 1 217.2 97.8"
+                            fill="none"
+                            stroke="#fff7bd"
+                            stroke-linecap="round"
+                            stroke-width="2.8"
+                            opacity="0.28"
+                        />
+                        <ellipse cx="193" cy="132" rx="5.5" ry="9" fill="#f2d76d" opacity="0.13" />
+                        <ellipse cx="205" cy="161" rx="8.5" ry="4.4" fill="#f2d76d" opacity="0.1" />
+                        <ellipse cx="205" cy="111" rx="4.8" ry="3.3" fill="#fffbd8" opacity="0.2" />
                     </g>
 
-                    <g class="eye-track eye-track-right" clip-path="url(#right-eye-clip)">
-                        <ellipse class="eye" cx="570" cy="500" rx="32" ry="54" />
-                        <ellipse class="eye-shine" cx="584" cy="478" rx="8" ry="13" />
-                        <rect class="eyelid eyelid-upper" x="530" y="360" width="80" height="66" rx="33" />
-                        <rect class="eyelid eyelid-lower" x="530" y="574" width="80" height="66" rx="33" />
+                </g>
+
+                <g class="cloud-field" filter="url(#cloud-soft)">
+                    <g class="cloud-back">
+                        <path
+                            d="M-680 318C-585 278 -458 278 -360 320C-278 282 -164 284 -72 322C-8 286 62 272 132 300C194 262 278 266 342 316C421 283 512 290 586 326C665 286 768 290 842 330C935 286 1062 292 1150 334C1240 304 1422 316 1660 364V650H-680Z"
+                            fill="url(#cloud-a)"
+                            opacity="0.92"
+                        />
+                        <path
+                            d="M-680 368C-574 320 -438 324 -336 372C-245 326 -120 328 -20 378C67 326 160 331 238 384C330 336 458 338 548 392C648 334 790 338 890 396C996 342 1160 352 1660 420V650H-680Z"
+                            fill="url(#cloud-a)"
+                            opacity="0.56"
+                        />
+                        <path
+                            d="M-680 392C-575 350 -445 350 -345 398C-254 354 -125 358 -22 405C82 350 194 360 290 415C386 364 512 370 610 424C722 366 888 372 1014 438C1136 390 1336 404 1660 470V650H-680Z"
+                            fill="#7bd6fa"
+                            opacity="0.76"
+                        />
+                        <path
+                            d="M-680 382C-556 340 -402 346 -280 392C-178 350 -40 356 72 404C170 360 310 366 420 420C520 382 655 390 760 438C880 396 1064 408 1660 490V650H-680Z"
+                            fill="#b8f2ff"
+                            opacity="0.13"
+                        />
+                    </g>
+
+                    <g class="cloud-mid">
+                        <path
+                            d="M-680 430C-574 374 -424 374 -320 430C-214 374 -70 380 32 438C138 378 282 384 388 444C502 386 660 392 776 456C894 400 1082 406 1660 502V650H-680Z"
+                            fill="url(#cloud-b)"
+                            opacity="0.96"
+                        />
+                        <path
+                            d="M-680 476C-570 424 -430 424 -326 478C-222 428 -82 432 20 488C124 432 278 438 386 498C505 438 672 438 792 504C914 450 1098 458 1660 540V650H-680Z"
+                            fill="url(#cloud-b)"
+                            opacity="0.68"
+                        />
+                    </g>
+
+                    <g class="cloud-front">
+                        <path
+                            d="M-680 502C-572 450 -436 448 -330 500C-226 452 -86 456 20 510C130 456 285 464 398 524C510 466 674 470 792 532C910 480 1090 488 1660 570V650H-680Z"
+                            fill="#8be2fb"
+                            opacity="0.86"
+                        />
+                        <path
+                            d="M-680 530C-574 478 -430 482 -324 536C-214 486 -70 490 42 542C150 494 290 500 398 558C510 506 666 512 778 568C896 516 1090 522 1660 596V650H-680Z"
+                            fill="#8be2fb"
+                            opacity="0.8"
+                        />
+                        <path
+                            d="M-680 550C-565 502 -430 506 -328 558C-220 512 -84 518 18 570C128 520 278 528 392 588C520 532 670 538 784 596C912 542 1122 548 1660 626V650H-680Z"
+                            fill="#f3b2e9"
+                            opacity="0.38"
+                        />
+                        <g class="cloud-brush" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M-650 336C-520 300 -358 300 -224 340C-90 300 80 302 260 333" stroke="#c6efff" stroke-width="36" opacity="0.22" />
+                            <path d="M-620 390C-460 352 -286 360 -150 410C-18 366 170 370 399 411" stroke="#a0f7ff" stroke-width="42" opacity="0.32" />
+                            <path d="M425 451C548 418 680 422 790 470C920 426 1080 432 1260 476C1386 448 1500 460 1660 506" stroke="#a6f6ff" stroke-width="48" opacity="0.25" />
+                            <path d="M700 348C820 312 980 318 1120 360C1260 326 1450 335 1660 392" stroke="#a1f7ff" stroke-width="44" opacity="0.26" />
+                            <path d="M-620 514C-470 478 -330 486 -190 532C-60 490 130 496 366 522" stroke="#ffafe6" stroke-width="48" opacity="0.26" />
+                            <path d="M705 510C830 474 982 488 1118 532C1260 498 1450 510 1660 570" stroke="#ffafe6" stroke-width="48" opacity="0.24" />
+                        </g>
+                    </g>
+                </g>
+
+                <g class="cinnamoroll">
+                    <ellipse class="ground-glow" cx="508" cy="381" rx="235" ry="55" fill="#5ba6ee" opacity="0.17" />
+
+                    <g class="body-back" filter="url(#fur-glow)">
+                        <path
+                            class="tail-ball"
+                            d="M647 296C669 273 707 287 716 323C724 357 699 380 669 370C642 361 627 317 647 296Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="tail-shadow"
+                            d="M643 346C659 368 696 374 711 352C706 380 665 385 643 363C637 357 637 350 643 346Z"
+                            fill="#efb8e7"
+                            opacity="0.14"
+                        />
+                        <path
+                            class="back-hump"
+                            d="M499 260C537 224 602 231 646 274C687 315 672 362 625 382C579 401 527 373 506 327C493 299 487 272 499 260Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="back-shade"
+                            d="M519 323C548 370 599 386 640 367C618 392 557 397 520 355C508 341 505 328 519 323Z"
+                            fill="#efb8e7"
+                            opacity="0.2"
+                        />
+                    </g>
+
+                    <g class="left-ear-group" filter="url(#fur-glow)">
+                        <g class="left-ear-rest">
+                            <path
+                                class="left-ear"
+                                d="M332 254C309 264 291 292 275 323C259 354 242 378 246 397C252 419 281 411 311 387C343 361 366 323 379 289C385 273 371 257 349 253C343 252 337 252 332 254Z"
+                                fill="url(#fur)"
+                            />
+                            <path
+                                class="cool-edge left-ear-edge"
+                                d="M326 258C300 282 280 321 260 360C252 376 247 390 248 400"
+                            />
+                            <path
+                                class="left-inner"
+                                d="M304 316C286 337 270 363 264 388C286 381 307 363 326 338C335 326 332 315 323 311C317 309 310 310 304 316Z"
+                                fill="url(#ear-inner)"
+                                opacity="0.44"
+                            />
+                        </g>
+                        <g class="left-ear-rise">
+                            <path
+                                class="left-ear"
+                                d="M330 178C365 183 386 224 383 264C379 303 350 319 318 297C287 276 275 235 285 204C292 184 307 174 330 178Z"
+                                fill="url(#fur)"
+                            />
+                            <path
+                                class="left-inner"
+                                d="M322 191C349 200 369 229 369 258C350 239 330 218 305 198C309 192 315 189 322 191Z"
+                                fill="url(#ear-inner)"
+                                opacity="0.5"
+                            />
+                        </g>
+                    </g>
+
+                    <g class="head-group" filter="url(#fur-glow)">
+                        <path
+                            class="head"
+                            d="M304 323C302 278 337 238 394 220C457 200 523 214 558 253C588 287 579 330 540 359C497 391 413 389 348 361C321 349 305 336 304 323Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="belly-shade"
+                            d="M317 339C356 374 447 386 525 364C482 397 380 390 331 360C321 354 316 346 317 339Z"
+                            fill="#eeb6eb"
+                            opacity="0.24"
+                        />
+                        <path
+                            class="head-highlight"
+                            d="M337 261C377 227 454 214 522 238C456 234 392 249 354 289C341 302 333 318 330 333C318 314 319 279 337 261Z"
+                            fill="#eaffff"
+                            opacity="0.22"
+                        />
+                    </g>
+
+                    <g class="front-ear">
+                        <path
+                            class="right-ear"
+                            d="M539 252C570 254 598 294 609 346C623 408 592 440 559 420C531 402 520 350 526 301C529 275 535 257 539 252Z"
+                            fill="url(#front-ear-fur)"
+                        />
+                        <path
+                            class="right-ear-highlight"
+                            d="M544 263C565 270 583 301 590 340C597 377 588 405 566 414C579 389 579 338 568 301C562 282 553 268 544 263Z"
+                            fill="#eaffff"
+                            opacity="0.16"
+                        />
+                        <path
+                            class="right-ear-body-seam"
+                            d="M582 277C606 305 618 366 603 401C596 416 583 423 566 420"
+                            fill="none"
+                        />
+                        <path
+                            class="cool-edge right-ear-edge"
+                            d="M535 282C526 326 535 380 561 415"
+                        />
+                    </g>
+
+                    <g class="paws" filter="url(#fur-glow)">
+                        <path
+                            class="paw left-paw"
+                            d="M309 368C329 350 365 350 381 368C395 384 376 399 345 398C318 397 295 386 309 368Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="paw right-paw"
+                            d="M419 386C439 368 480 368 498 388C512 404 491 419 456 416C427 414 402 402 419 386Z"
+                            fill="url(#fur)"
+                        />
+                    </g>
+
+                    <g class="face">
+                        <ellipse class="eye eye-left" cx="378" cy="304" rx="6.4" ry="13" fill="#7a9bec" />
+                        <ellipse class="eye eye-right" cx="455" cy="314" rx="6.7" ry="13.4" fill="#7a9bec" />
+                        <ellipse class="cheek cheek-left" cx="352" cy="335" rx="12.5" ry="10.5" fill="#f4aee3" opacity="0.72" />
+                        <ellipse class="cheek cheek-right" cx="492" cy="339" rx="17" ry="14" fill="#f4aee3" opacity="0.72" />
+                        <path
+                            class="mouth"
+                            d="M394.2 346.3C396.6 347.6 398.9 348.5 401.1 347.1C402.8 346 404.6 347.8 406.1 349.2C408 351 410.6 350.8 412.7 349.2"
+                            fill="none"
+                            stroke="#7f9edd"
+                            stroke-width="1.35"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            opacity="0.72"
+                        />
+                    </g>
+                </g>
+
+                <g class="cloud-cover" filter="url(#cloud-soft)">
+                    <path
+                        d="M-680 420C-570 370 -420 372 -316 420C-210 370 -68 374 40 426C148 372 302 378 410 436C520 380 674 386 784 446C900 392 1080 398 1660 500V650H-680Z"
+                        fill="#8be7f7"
+                        opacity="0.6"
+                    />
+                    <path
+                        d="M-680 452C-568 398 -424 402 -316 456C-212 406 -70 410 36 462C150 406 300 412 410 470C524 416 678 420 794 480C918 424 1110 432 1660 528V650H-680Z"
+                        fill="#73d5f5"
+                        opacity="0.56"
+                    />
+                    <path
+                        d="M-680 484C-572 430 -420 432 -314 486C-206 436 -62 438 44 492C154 438 304 444 412 502C528 448 688 452 804 510C936 454 1128 462 1660 552V650H-680Z"
+                        fill="#9beefa"
+                        opacity="0.68"
+                    />
+                    <path
+                        d="M-680 510C-568 456 -420 460 -310 514C-205 464 -62 470 44 520C152 474 300 480 410 536C528 484 690 488 808 548C934 494 1120 500 1660 584V650H-680Z"
+                        fill="#7ccff2"
+                        opacity="0.54"
+                    />
+                    <path
+                        d="M-680 540C-568 486 -420 492 -314 548C-208 498 -66 505 38 558C150 510 304 516 414 576C530 522 692 530 810 588C942 532 1130 538 1660 618V650H-680Z"
+                        fill="#f6b5ea"
+                        opacity="0.28"
+                    />
+                    <path
+                        d="M-680 552C-565 500 -420 506 -310 560C-200 512 -54 518 54 570C164 522 310 532 426 590C546 540 700 548 816 604C945 552 1138 558 1660 630V650H-680Z"
+                        fill="#9beefa"
+                        opacity="0.74"
+                    />
+                </g>
+
+                <g class="ear-sparkles" filter="url(#star-glow)">
+                    <g class="sparkle-layer ribbon-layer">
+                        <path
+                            class="sparkle-ribbon ribbon-one"
+                            d="M392 165C430 130 470 106 522 103C570 100 606 113 642 142"
+                            stroke="url(#sparkle-ribbon-gradient)"
+                            stroke-width="5.4"
+                        />
+                        <path
+                            class="sparkle-ribbon ribbon-two"
+                            d="M426 143C463 111 511 87 565 92"
+                            stroke="#fff8bd"
+                            stroke-width="2.2"
+                        />
+                    </g>
+                    <g class="sparkle-layer halo-layer halo-lag-one">
+                        <circle class="sparkle-halo halo-one" cx="463" cy="112" r="26" fill="url(#sparkle-gold-glow)" />
+                    </g>
+                    <g class="sparkle-layer halo-layer halo-lag-two">
+                        <circle class="sparkle-halo halo-two" cx="542" cy="103" r="33" fill="url(#sparkle-cyan-glow)" />
+                    </g>
+                    <g class="sparkle-layer halo-layer halo-lag-three">
+                        <circle class="sparkle-halo halo-three" cx="606" cy="135" r="24" fill="url(#sparkle-pink-glow)" />
+                    </g>
+
+                    <g class="sparkle-layer star-lag-one">
+                        <g class="sparkle-star sparkle-one" transform="translate(402 158) rotate(-12)">
+                            <path
+                                class="spark-core"
+                                d="M0 -9C1.9 -3.5 3.5 -1.9 9 0C3.5 1.9 1.9 3.5 0 9C-1.9 3.5 -3.5 1.9 -9 0C-3.5 -1.9 -1.9 -3.5 0 -9Z"
+                                fill="#bdfdff"
+                            />
+                        </g>
+                    </g>
+                    <g class="sparkle-layer star-lag-two">
+                        <g class="sparkle-star sparkle-two" transform="translate(449 112) rotate(11)">
+                            <path
+                                class="spark-core"
+                                d="M0 -16C3.2 -6 6 -3.2 16 0C6 3.2 3.2 6 0 16C-3.2 6 -6 3.2 -16 0C-6 -3.2 -3.2 -6 0 -16Z"
+                                fill="#fffdda"
+                            />
+                        </g>
+                    </g>
+                    <g class="sparkle-layer star-lag-three">
+                        <g class="sparkle-star sparkle-three" transform="translate(507 82) rotate(-8)">
+                            <path
+                                class="spark-core"
+                                d="M0 -23C4.4 -8.2 8.2 -4.4 23 0C8.2 4.4 4.4 8.2 0 23C-4.4 8.2 -8.2 4.4 -23 0C-8.2 -4.4 -4.4 -8.2 0 -23Z"
+                                fill="#fffef0"
+                            />
+                        </g>
+                    </g>
+                    <g class="sparkle-layer star-lag-four">
+                        <g class="sparkle-star sparkle-four" transform="translate(553 111) rotate(15)">
+                            <path
+                                class="spark-core"
+                                d="M0 -13C2.8 -4.7 4.7 -2.8 13 0C4.7 2.8 2.8 4.7 0 13C-2.8 4.7 -4.7 2.8 -13 0C-4.7 -2.8 -2.8 -4.7 0 -13Z"
+                                fill="#bdfdff"
+                            />
+                        </g>
+                    </g>
+                    <g class="sparkle-layer star-lag-five">
+                        <g class="sparkle-star sparkle-five" transform="translate(614 97) rotate(-14)">
+                            <path
+                                class="spark-core"
+                                d="M0 -19C3.7 -6.8 6.8 -3.7 19 0C6.8 3.7 3.7 6.8 0 19C-3.7 6.8 -6.8 3.7 -19 0C-6.8 -3.7 -3.7 -6.8 0 -19Z"
+                                fill="#fff9c8"
+                            />
+                        </g>
+                    </g>
+                    <g class="sparkle-layer star-lag-six">
+                        <g class="sparkle-star sparkle-six" transform="translate(589 145) rotate(7)">
+                            <path
+                                class="spark-core"
+                                d="M0 -8C1.8 -3 3 -1.8 8 0C3 1.8 1.8 3 0 8C-1.8 3 -3 1.8 -8 0C-3 -1.8 -1.8 -3 0 -8Z"
+                                fill="#ffd0ef"
+                            />
+                        </g>
+                    </g>
+
+                    <g class="sparkle-layer dust-lag-one">
+                        <circle class="sparkle-dust dust-one" cx="427" cy="135" r="2.7" fill="#fff7a6" />
+                    </g>
+                    <g class="sparkle-layer dust-lag-two">
+                        <circle class="sparkle-dust dust-two" cx="476" cy="91" r="2.2" fill="#ccfbff" />
+                    </g>
+                    <g class="sparkle-layer dust-lag-three">
+                        <circle class="sparkle-dust dust-three" cx="535" cy="139" r="2.5" fill="#ffd4f2" />
+                    </g>
+                    <g class="sparkle-layer dust-lag-four">
+                        <circle class="sparkle-dust dust-four" cx="638" cy="123" r="2" fill="#d9fdff" />
                     </g>
                 </g>
             </svg>
-
-            <a class="signature" href="https://xat.me/umbreon" target="_blank" rel="noopener noreferrer">
-                <img src="signature.svg" alt="by karl" />
-            </a>
         </main>
+        <script>
+            (() => {
+                const scene = document.querySelector(".scene");
+                const baseWidth = 960;
+                const baseHeight = 540;
+                const centerX = baseWidth / 2;
+                const centerY = baseHeight / 2;
+                const maxWorldWidth = 2320;
+                const maxWorldHeight = 770;
 
-        <script src="js/script.js"></script>
+                function updateViewBox() {
+                    const viewportWidth = window.innerWidth || baseWidth;
+                    const viewportHeight = window.innerHeight || baseHeight;
+                    const viewportAspect = viewportWidth / viewportHeight;
+                    const baseAspect = baseWidth / baseHeight;
+                    let x = 0;
+                    let y = 0;
+                    let width = baseWidth;
+                    let height = baseHeight;
+
+                    if (viewportAspect > baseAspect) {
+                        const extraHeight = Math.min(0.34, (viewportAspect - baseAspect) * 0.16);
+                        height = baseHeight * (1 + extraHeight);
+                        width = height * viewportAspect;
+                    } else if (viewportAspect < baseAspect) {
+                        height = Math.min(760, baseWidth / viewportAspect);
+                        width = height * viewportAspect;
+                    }
+
+                    if (width > maxWorldWidth) {
+                        width = maxWorldWidth;
+                        height = width / viewportAspect;
+                    }
+
+                    if (height > maxWorldHeight) {
+                        height = maxWorldHeight;
+                        width = height * viewportAspect;
+                    }
+
+                    x = centerX - width / 2;
+                    y = centerY - height / 2;
+                    scene.setAttribute("viewBox", `${x} ${y} ${width} ${height}`);
+                }
+
+                updateViewBox();
+                window.addEventListener("resize", updateViewBox, { passive: true });
+            })();
+        </script>
     </body>
 </html>
