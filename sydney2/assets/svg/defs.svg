@@ -1,0 +1,230 @@
+<defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#3347df" />
+                        <stop offset="0.42" stop-color="#5268f3" />
+                        <stop offset="0.74" stop-color="#66aaf8" />
+                        <stop offset="1" stop-color="#8ad9ff" />
+                    </linearGradient>
+
+                    <linearGradient id="sky-brush" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#3447d8" stop-opacity="0.32" />
+                        <stop offset="1" stop-color="#739fff" stop-opacity="0.12" />
+                    </linearGradient>
+
+                    <radialGradient id="moon-sky-haze" cx="23%" cy="24%" r="26%">
+                        <stop offset="0" stop-color="#fff0b2" stop-opacity="0.16" />
+                        <stop offset="0.5" stop-color="#b4ddff" stop-opacity="0.09" />
+                        <stop offset="1" stop-color="#7aa8ff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="upper-sky-haze" cx="58%" cy="13%" r="62%">
+                        <stop offset="0" stop-color="#9ed4ff" stop-opacity="0.13" />
+                        <stop offset="0.48" stop-color="#c5a8ff" stop-opacity="0.06" />
+                        <stop offset="1" stop-color="#4657e8" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="soft-violet-band" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#89f2ff" stop-opacity="0" />
+                        <stop offset="0.34" stop-color="#b8d8ff" stop-opacity="0.2" />
+                        <stop offset="0.6" stop-color="#f3b6ff" stop-opacity="0.13" />
+                        <stop offset="1" stop-color="#8af4ff" stop-opacity="0" />
+                    </linearGradient>
+
+                    <linearGradient id="milky-way-fill" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#bffbff" stop-opacity="0" />
+                        <stop offset="0.24" stop-color="#d8fbff" stop-opacity="0.025" />
+                        <stop offset="0.5" stop-color="#ffd5f6" stop-opacity="0.045" />
+                        <stop offset="0.76" stop-color="#fff8bd" stop-opacity="0.026" />
+                        <stop offset="1" stop-color="#bffbff" stop-opacity="0" />
+                    </linearGradient>
+
+                    <linearGradient id="sydney-sky-wordmark" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#ffffff" stop-opacity="0.72" />
+                        <stop offset="0.48" stop-color="#fff8ff" stop-opacity="0.5" />
+                        <stop offset="1" stop-color="#bff8ff" stop-opacity="0.34" />
+                    </linearGradient>
+
+                    <filter id="wordmark-soft" x="-30%" y="-70%" width="160%" height="240%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.58  0 1 0 0 0.9  0 0 1 0 1  0 0 0 0.52 0"
+                            result="cyan"
+                        />
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="0.45" result="softText" />
+                        <feMerge>
+                            <feMergeNode in="cyan" />
+                            <feMergeNode in="softText" />
+                        </feMerge>
+                    </filter>
+
+                    <radialGradient id="planet-pink-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#ffd4f2" stop-opacity="0.18" />
+                        <stop offset="1" stop-color="#ffd4f2" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="planet-cyan-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#bffbff" stop-opacity="0.14" />
+                        <stop offset="1" stop-color="#bffbff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="star-soft-fill" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#fffde6" stop-opacity="1" />
+                        <stop offset="0.54" stop-color="#d5fbff" stop-opacity="0.78" />
+                        <stop offset="1" stop-color="#d5fbff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="cloud-a" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#95f2ff" />
+                        <stop offset="1" stop-color="#66b6ee" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-b" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#76dcff" />
+                        <stop offset="1" stop-color="#5aa8ef" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-pink" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#ffc4ef" />
+                        <stop offset="1" stop-color="#f39bdc" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-top" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#d6ffff" />
+                        <stop offset="0.55" stop-color="#91eaff" />
+                        <stop offset="1" stop-color="#68c4f2" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-shadow" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#73d7f4" stop-opacity="0.18" />
+                        <stop offset="1" stop-color="#469fe8" stop-opacity="0.54" />
+                    </linearGradient>
+
+                    <linearGradient id="cloud-lilac" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#fff2ff" stop-opacity="0.52" />
+                        <stop offset="1" stop-color="#eaa8ea" stop-opacity="0.32" />
+                    </linearGradient>
+
+                    <linearGradient id="fur" x1="0.2" y1="0" x2="0.82" y2="1">
+                        <stop offset="0" stop-color="#cbfaff" />
+                        <stop offset="0.42" stop-color="#c0efff" />
+                        <stop offset="0.78" stop-color="#badff7" />
+                        <stop offset="1" stop-color="#f1c3ed" />
+                    </linearGradient>
+
+                    <linearGradient id="fur-soft" x1="0.12" y1="0" x2="0.85" y2="1">
+                        <stop offset="0" stop-color="#e8ffff" stop-opacity="0.88" />
+                        <stop offset="0.58" stop-color="#b9efff" stop-opacity="0.58" />
+                        <stop offset="1" stop-color="#f4bde9" stop-opacity="0.48" />
+                    </linearGradient>
+
+                    <linearGradient id="front-ear-fur" x1="0.25" y1="0" x2="0.72" y2="1">
+                        <stop offset="0" stop-color="#d7ffff" />
+                        <stop offset="0.46" stop-color="#c6f2ff" />
+                        <stop offset="0.78" stop-color="#bddff7" />
+                        <stop offset="1" stop-color="#f0c2ed" />
+                    </linearGradient>
+
+                    <linearGradient id="ear-inner" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#f8c5f0" />
+                        <stop offset="0.52" stop-color="#eeb7ea" />
+                        <stop offset="1" stop-color="#aef8ff" />
+                    </linearGradient>
+
+                    <radialGradient id="moon-fill" cx="34%" cy="28%" r="78%">
+                        <stop offset="0" stop-color="#fffde2" />
+                        <stop offset="0.55" stop-color="#fff5af" />
+                        <stop offset="1" stop-color="#efd96e" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-gold-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#fffad3" stop-opacity="0.95" />
+                        <stop offset="1" stop-color="#fff074" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-cyan-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#bafcff" stop-opacity="0.82" />
+                        <stop offset="0.56" stop-color="#a7f6ff" stop-opacity="0.28" />
+                        <stop offset="1" stop-color="#8ff5ff" stop-opacity="0" />
+                    </radialGradient>
+
+                    <radialGradient id="sparkle-pink-glow" cx="50%" cy="50%" r="58%">
+                        <stop offset="0" stop-color="#ffd3f3" stop-opacity="0.72" />
+                        <stop offset="0.58" stop-color="#ffc4ed" stop-opacity="0.24" />
+                        <stop offset="1" stop-color="#ffb4e6" stop-opacity="0" />
+                    </radialGradient>
+
+                    <linearGradient id="sparkle-ribbon-gradient" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#bffbff" stop-opacity="0" />
+                        <stop offset="0.32" stop-color="#bffbff" stop-opacity="0.72" />
+                        <stop offset="0.62" stop-color="#fff8b8" stop-opacity="0.92" />
+                        <stop offset="1" stop-color="#ffccef" stop-opacity="0" />
+                    </linearGradient>
+
+                    <filter id="cloud-soft" x="-5%" y="-10%" width="110%" height="125%">
+                        <feTurbulence baseFrequency="0.014" numOctaves="2" seed="13" type="fractalNoise" result="noise" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.1" />
+                    </filter>
+
+                    <filter id="sky-soft" x="-12%" y="-12%" width="124%" height="124%">
+                        <feGaussianBlur stdDeviation="8" />
+                    </filter>
+
+                    <filter id="ambient-star-glow" x="-160%" y="-160%" width="420%" height="420%">
+                        <feGaussianBlur stdDeviation="2.2" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.72  0 1 0 0 0.92  0 0 1 0 1  0 0 0 0.42 0"
+                            result="halo"
+                        />
+                        <feMerge>
+                            <feMergeNode in="halo" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="moon-glow" x="-110%" y="-110%" width="320%" height="320%">
+                        <feGaussianBlur stdDeviation="7.5" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 1  0 1 0 0 0.86  0 0 1 0 0.32  0 0 0 0.58 0"
+                            result="glow"
+                        />
+                        <feMerge>
+                            <feMergeNode in="glow" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="fur-glow" x="-35%" y="-45%" width="170%" height="190%">
+                        <feGaussianBlur stdDeviation="3.2" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.9  0 1 0 0 0.88  0 0 1 0 0.45  0 0 0 0.5 0"
+                            result="warm"
+                        />
+                        <feMerge>
+                            <feMergeNode in="warm" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter id="star-glow" x="-130%" y="-130%" width="360%" height="360%">
+                        <feGaussianBlur stdDeviation="4.4" result="blur" />
+                        <feColorMatrix
+                            in="blur"
+                            type="matrix"
+                            values="1 0 0 0 0.72  0 1 0 0 0.94  0 0 1 0 1  0 0 0 0.62 0"
+                            result="halo"
+                        />
+                        <feMerge>
+                            <feMergeNode in="halo" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                </defs>

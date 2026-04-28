@@ -1,0 +1,1370 @@
+﻿:root {
+    color-scheme: dark;
+    --loop: 2050ms;
+    --sky-fallback: #4257ed;
+    --fur-edge: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background: var(--sky-fallback);
+}
+
+.stage {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--sky-fallback);
+}
+
+.scene {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.cloud-back {
+    animation: cloud-back 18s ease-in-out infinite;
+    transform-box: view-box;
+}
+
+.cloud-mid {
+    animation: cloud-mid 14s ease-in-out infinite;
+    animation-delay: -4s;
+    transform-box: view-box;
+}
+
+.cloud-front {
+    animation: cloud-front 11s ease-in-out infinite;
+    animation-delay: -2s;
+    transform-box: view-box;
+}
+
+.cloud-cover {
+    animation: cloud-cover 9s ease-in-out infinite;
+    animation-delay: -5s;
+    transform-box: view-box;
+}
+
+.sky-atmosphere,
+.sky-wordmark,
+.ambient-stars,
+.milky-way,
+.distant-planets {
+    pointer-events: none;
+}
+
+.sky-band {
+    animation: sky-band-breathe calc(var(--loop) * 5) ease-in-out infinite;
+}
+
+.band-two {
+    animation-delay: calc(var(--loop) * -1.4);
+}
+
+.ambient-dot,
+.ambient-star {
+    opacity: 0.72;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.milky-way {
+    animation: milky-way-breathe 18s ease-in-out infinite;
+}
+
+.milky-way-specks {
+    opacity: 0.7;
+}
+
+.sky-wordmark {
+    animation: sky-wordmark-breathe 20s ease-in-out infinite;
+    mix-blend-mode: screen;
+    opacity: 0.22;
+}
+
+.sydney-logo-glow {
+    fill: none;
+    stroke: #83ecff;
+    stroke-linejoin: round;
+    stroke-width: 26;
+    opacity: 0.3;
+}
+
+.sydney-logo-fill {
+    opacity: 0.56;
+}
+
+.planet {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.planet-one {
+    animation: planet-drift-one 18s ease-in-out infinite;
+}
+
+.planet-two {
+    animation: planet-drift-two 22s ease-in-out infinite;
+    animation-delay: -7s;
+}
+
+.shooting-stars {
+    pointer-events: none;
+}
+
+.shooting-star {
+    --star-dash: 150;
+    fill: none;
+    opacity: 0;
+    stroke-dasharray: var(--star-dash);
+    stroke-dashoffset: var(--star-dash);
+}
+
+.shooting-star-one {
+    animation: shooting-star-one 46s linear infinite;
+    animation-delay: 6s;
+}
+
+.shooting-star-two {
+    animation: shooting-star-two 58s linear infinite;
+    animation-delay: 19s;
+}
+
+.shooting-star-three {
+    animation: shooting-star-three 53s linear infinite;
+    animation-delay: 31s;
+}
+
+.shooting-star-four {
+    animation: shooting-star-four 67s linear infinite;
+    animation-delay: 44s;
+}
+
+.shooting-star-five {
+    animation: shooting-star-five 61s linear infinite;
+    animation-delay: 12s;
+}
+
+.shooting-star-six {
+    animation: shooting-star-six 73s linear infinite;
+    animation-delay: 56s;
+}
+
+.shooting-star-seven {
+    animation: shooting-star-seven 83s linear infinite;
+    animation-delay: 72s;
+}
+
+.twinkle-slow {
+    animation: ambient-twinkle-slow calc(var(--loop) * 4.6) ease-in-out infinite;
+}
+
+.twinkle-soft {
+    animation: ambient-twinkle-soft calc(var(--loop) * 3.8) ease-in-out infinite;
+}
+
+.twinkle-bright {
+    animation: ambient-twinkle-bright calc(var(--loop) * 4.2) ease-in-out infinite;
+}
+
+.star-depth-back .ambient-dot:nth-child(2n),
+.star-depth-front .ambient-star:nth-child(2n) {
+    animation-delay: calc(var(--loop) * -0.9);
+}
+
+.star-depth-back .ambient-dot:nth-child(3n),
+.star-depth-front .ambient-star:nth-child(3n) {
+    animation-delay: calc(var(--loop) * -1.8);
+}
+
+.moon {
+    animation: moon-pulse calc(var(--loop) * 2) ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.moon-crescent,
+.moon-inner-rim,
+.moon-lit-rim {
+    shape-rendering: geometricPrecision;
+}
+
+.cinnamoroll {
+    animation: cinnamoroll-breathe 4.8s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: 52% 62%;
+}
+
+.head,
+.back-hump,
+.right-ear,
+.left-ear,
+.tail,
+.tail-puff,
+.tail-ball,
+.rear-foot,
+.chest-fluff,
+.front-body-legs,
+.front-leg,
+.front-paw,
+.foreleg,
+.paw-pad {
+    stroke: var(--fur-edge);
+    stroke-width: 0;
+    stroke-linejoin: round;
+}
+
+.belly-shade,
+.head-highlight,
+.head-ear-overlap,
+.head-lower-rim,
+.chin-soft-light,
+.back-highlight,
+.tail-highlight,
+.tail-inner-puff,
+.tail-curl,
+.rear-foot-shadow,
+.chest-highlight,
+.front-body-highlight,
+.front-leg-highlight,
+.under-body,
+.under-body-shadow,
+.front-paw-glow,
+.front-paw-highlight,
+.front-paw-shadow,
+.front-paw-crease,
+.left-inner,
+.left-ear-root-shadow,
+.right-inner,
+.right-ear-highlight,
+.right-ear-inner-blush,
+.right-ear-lower-separation,
+.eye-glint,
+.belly-rim,
+.paw-creases,
+.foreleg-soft-shadow {
+    pointer-events: none;
+}
+
+.cool-edge,
+.warm-rim {
+    fill: none;
+    pointer-events: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cool-edge {
+    stroke: rgba(154, 250, 255, 0.5);
+    stroke-width: 5.2;
+}
+
+.warm-rim {
+    stroke: rgba(255, 250, 166, 0.34);
+    stroke-width: 3;
+}
+
+.left-ear-group {
+    transform-box: view-box;
+}
+
+.left-ear-rest {
+    animation: left-ear-flap var(--loop) cubic-bezier(0.42, 0, 0.2, 1) infinite;
+    transform-box: view-box;
+    transform-origin: 366px 287px;
+}
+
+.left-ear-rise {
+    display: none;
+}
+
+.left-ear-rise .left-ear {
+    fill: #c9fbff;
+    stroke: transparent;
+    stroke-width: 0;
+}
+
+.left-ear-rise .left-inner {
+    fill: #efc3ef;
+    opacity: 0.64;
+}
+
+.body-back {
+    animation: none;
+    transform-box: fill-box;
+    transform-origin: 18% 48%;
+}
+
+.rear-foot {
+    opacity: 0.82;
+}
+
+.front-ear {
+    animation: none;
+    transform-box: fill-box;
+    transform-origin: 10% 15%;
+}
+
+.front-ear .right-ear {
+    filter: none;
+}
+
+.right-ear-edge {
+    opacity: 0.34;
+    stroke-width: 4;
+}
+
+.right-ear-body-seam {
+    pointer-events: none;
+    stroke: rgba(108, 204, 239, 0.16);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.8;
+}
+
+.right-ear-body-seam + .right-ear-edge {
+    stroke: rgba(151, 249, 255, 0.38);
+}
+
+.right-ear-lower-separation {
+    stroke: rgba(87, 185, 226, 0.18);
+    stroke-linecap: round;
+    stroke-width: 3.4;
+}
+
+.face {
+    animation: none;
+}
+
+.eye {
+    animation: none;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cheek {
+    animation: none;
+}
+
+.front-paw-crease {
+    stroke: rgba(105, 185, 230, 0.24);
+    stroke-linecap: round;
+    stroke-width: 1.4;
+    opacity: 0;
+}
+
+.eye-glint {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.ear-sparkles {
+    opacity: 0;
+    animation: sparkle-sweep var(--loop) linear infinite;
+    transform-box: view-box;
+    transform-origin: 470px 132px;
+    will-change: opacity, transform;
+}
+
+.sparkle-ribbon {
+    fill: none;
+    opacity: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sparkle-layer {
+    transform-box: view-box;
+    transform-origin: 520px 122px;
+    will-change: transform;
+}
+
+.ribbon-layer {
+    animation: layer-ribbon var(--loop) linear infinite;
+}
+
+.halo-lag-one {
+    animation: layer-halo-a var(--loop) linear infinite;
+}
+
+.halo-lag-two {
+    animation: layer-halo-b var(--loop) linear infinite;
+}
+
+.halo-lag-three {
+    animation: layer-halo-c var(--loop) linear infinite;
+}
+
+.star-lag-one,
+.star-lag-four {
+    animation: layer-star-a var(--loop) linear infinite;
+}
+
+.star-lag-two,
+.star-lag-six {
+    animation: layer-star-b var(--loop) linear infinite;
+}
+
+.star-lag-three,
+.star-lag-five {
+    animation: layer-star-c var(--loop) linear infinite;
+}
+
+.dust-lag-one,
+.dust-lag-three {
+    animation: layer-dust-a var(--loop) linear infinite;
+}
+
+.dust-lag-two,
+.dust-lag-four {
+    animation: layer-dust-b var(--loop) linear infinite;
+}
+
+.sparkle-halo,
+.sparkle-dust,
+.spark-core {
+    opacity: 0;
+}
+
+.spark-core {
+    shape-rendering: geometricPrecision;
+}
+
+.ribbon-one {
+    animation: ribbon-fade var(--loop) ease-in-out infinite;
+}
+
+.ribbon-two {
+    animation: ribbon-fade-soft var(--loop) ease-in-out -70ms infinite;
+}
+
+.halo-one {
+    animation: halo-fade var(--loop) ease-in-out -35ms infinite;
+}
+
+.halo-two {
+    animation: halo-fade var(--loop) ease-in-out -95ms infinite;
+}
+
+.halo-three {
+    animation: halo-fade-soft var(--loop) ease-in-out -170ms infinite;
+}
+
+.sparkle-one .spark-core {
+    animation: spark-fade-small var(--loop) ease-in-out infinite;
+}
+
+.sparkle-two .spark-core {
+    animation: spark-fade var(--loop) ease-in-out -45ms infinite;
+}
+
+.sparkle-three .spark-core {
+    animation: spark-fade-hero var(--loop) ease-in-out -95ms infinite;
+}
+
+.sparkle-four .spark-core {
+    animation: spark-fade var(--loop) ease-in-out -145ms infinite;
+}
+
+.sparkle-five .spark-core {
+    animation: spark-fade-hero var(--loop) ease-in-out -220ms infinite;
+}
+
+.sparkle-six .spark-core {
+    animation: spark-fade-small var(--loop) ease-in-out -275ms infinite;
+}
+
+.dust-one {
+    animation: dust-glint var(--loop) linear -20ms infinite;
+}
+
+.dust-two {
+    animation: dust-glint var(--loop) linear -95ms infinite;
+}
+
+.dust-three {
+    animation: dust-glint var(--loop) linear -170ms infinite;
+}
+
+.dust-four {
+    animation: dust-glint var(--loop) linear -255ms infinite;
+}
+
+@keyframes cinn-float {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    18% {
+        transform: translate(-2px, 2px) rotate(0.3deg);
+    }
+
+    34% {
+        transform: translate(5px, -18px) rotate(-4deg);
+    }
+
+    48% {
+        transform: translate(6px, -13px) rotate(-2.2deg);
+    }
+
+    66% {
+        transform: translate(2px, -4px) rotate(-0.8deg);
+    }
+}
+
+@keyframes left-ear-flap {
+    0%,
+    22%,
+    76%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    34% {
+        transform: translate(-3px, -10px) rotate(64deg);
+    }
+
+    46% {
+        transform: translate(-1px, -8px) rotate(54deg);
+    }
+
+    58% {
+        transform: translate(1px, 2px) rotate(-5deg);
+    }
+
+    66% {
+        transform: translate(0, 0) rotate(3deg);
+    }
+}
+
+@keyframes left-ear-rise {
+    0%,
+    24%,
+    59%,
+    100% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+
+    31% {
+        opacity: 1;
+        transform: translate(-2px, -2px);
+    }
+
+    46% {
+        opacity: 1;
+        transform: translate(1px, 1px);
+    }
+
+    52% {
+        opacity: 0.24;
+        transform: translate(0, 4px);
+    }
+}
+
+@keyframes right-side-settle {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    36% {
+        transform: translate(5px, -3px) rotate(4deg);
+    }
+
+    62% {
+        transform: translate(1px, 1px) rotate(-2deg);
+    }
+}
+
+@keyframes front-ear-breathe {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    38% {
+        transform: translate(4px, -2px) rotate(3deg);
+    }
+
+    64% {
+        transform: translate(1px, 1px) rotate(-1deg);
+    }
+}
+
+@keyframes sparkle-sweep {
+    0%,
+    25% {
+        opacity: 0;
+        transform: translate(-114px, 94px);
+    }
+
+    33% {
+        opacity: 0.26;
+        transform: translate(-84px, 68px);
+    }
+
+    42% {
+        opacity: 0.78;
+        transform: translate(-46px, 36px);
+    }
+
+    52% {
+        opacity: 1;
+        transform: translate(4px, 8px);
+    }
+
+    63% {
+        opacity: 0.82;
+        transform: translate(54px, 18px);
+    }
+
+    75% {
+        opacity: 0.32;
+        transform: translate(112px, 50px);
+    }
+
+    87%,
+    100% {
+        opacity: 0;
+        transform: translate(150px, 76px);
+    }
+}
+
+@keyframes layer-ribbon {
+    0%,
+    26%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    42% {
+        transform: translate(-8px, 5px);
+    }
+
+    56% {
+        transform: translate(-2px, -4px);
+    }
+
+    72% {
+        transform: translate(10px, -2px);
+    }
+}
+
+@keyframes layer-halo-a {
+    0%,
+    28%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    43% {
+        transform: translate(-4px, 2px);
+    }
+
+    61% {
+        transform: translate(3px, -5px);
+    }
+
+    76% {
+        transform: translate(8px, -3px);
+    }
+}
+
+@keyframes layer-halo-b {
+    0%,
+    28%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    43% {
+        transform: translate(2px, -3px);
+    }
+
+    61% {
+        transform: translate(8px, -8px);
+    }
+
+    76% {
+        transform: translate(13px, -5px);
+    }
+}
+
+@keyframes layer-halo-c {
+    0%,
+    30%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    46% {
+        transform: translate(5px, 3px);
+    }
+
+    64% {
+        transform: translate(11px, -2px);
+    }
+
+    78% {
+        transform: translate(17px, 2px);
+    }
+}
+
+@keyframes layer-star-a {
+    0%,
+    27%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    43% {
+        transform: translate(-3px, 3px);
+    }
+
+    58% {
+        transform: translate(1px, -4px);
+    }
+
+    76% {
+        transform: translate(9px, -2px);
+    }
+}
+
+@keyframes layer-star-b {
+    0%,
+    27%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    43% {
+        transform: translate(4px, -2px);
+    }
+
+    58% {
+        transform: translate(10px, -7px);
+    }
+
+    76% {
+        transform: translate(17px, -3px);
+    }
+}
+
+@keyframes layer-star-c {
+    0%,
+    27%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    43% {
+        transform: translate(1px, -6px);
+    }
+
+    58% {
+        transform: translate(8px, -11px);
+    }
+
+    76% {
+        transform: translate(18px, -8px);
+    }
+}
+
+@keyframes layer-dust-a {
+    0%,
+    31%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    48% {
+        transform: translate(-7px, 5px);
+    }
+
+    66% {
+        transform: translate(-2px, -3px);
+    }
+
+    80% {
+        transform: translate(5px, -1px);
+    }
+}
+
+@keyframes layer-dust-b {
+    0%,
+    31%,
+    88%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    48% {
+        transform: translate(5px, -4px);
+    }
+
+    66% {
+        transform: translate(12px, -9px);
+    }
+
+    80% {
+        transform: translate(19px, -5px);
+    }
+}
+
+@keyframes ribbon-fade {
+    0%,
+    27%,
+    84%,
+    100% {
+        opacity: 0;
+    }
+
+    38% {
+        opacity: 0.22;
+    }
+
+    52% {
+        opacity: 0.48;
+    }
+
+    70% {
+        opacity: 0.16;
+    }
+}
+
+@keyframes ribbon-fade-soft {
+    0%,
+    30%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    44% {
+        opacity: 0.28;
+    }
+
+    64% {
+        opacity: 0.12;
+    }
+}
+
+@keyframes halo-fade {
+    0%,
+    28%,
+    78%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.54;
+    }
+
+    57% {
+        opacity: 0.26;
+    }
+}
+
+@keyframes halo-fade-soft {
+    0%,
+    31%,
+    82%,
+    100% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0.32;
+    }
+
+    67% {
+        opacity: 0.16;
+    }
+}
+
+@keyframes spark-fade {
+    0%,
+    29%,
+    79%,
+    100% {
+        opacity: 0;
+    }
+
+    38% {
+        opacity: 0.92;
+    }
+
+    51% {
+        opacity: 0.84;
+    }
+
+    66% {
+        opacity: 0.18;
+    }
+}
+
+@keyframes spark-fade-small {
+    0%,
+    30%,
+    76%,
+    100% {
+        opacity: 0;
+    }
+
+    41% {
+        opacity: 0.86;
+    }
+
+    57% {
+        opacity: 0.44;
+    }
+}
+
+@keyframes spark-fade-hero {
+    0%,
+    28%,
+    82%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    56% {
+        opacity: 0.88;
+    }
+
+    70% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes dust-glint {
+    0%,
+    32%,
+    79%,
+    100% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0.9;
+    }
+
+    61% {
+        opacity: 0.35;
+    }
+}
+
+@keyframes cloud-back {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-10px, 3px);
+    }
+}
+
+@keyframes cloud-mid {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(8px, 4px);
+    }
+}
+
+@keyframes cloud-front {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-6px, 5px);
+    }
+}
+
+@keyframes cloud-cover {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5px, 4px);
+    }
+}
+
+@keyframes cinnamoroll-breathe {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    46% {
+        transform: translateY(1.4px) scale(1.006, 0.995);
+    }
+
+    68% {
+        transform: translateY(0.6px) scale(1.002, 0.998);
+    }
+}
+
+@keyframes shooting-star-one {
+    0%,
+    74%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    77% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    80% {
+        opacity: 0.95;
+        stroke-dashoffset: 0;
+    }
+
+    84% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-two {
+    0%,
+    82%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    85% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    88% {
+        opacity: 0.82;
+        stroke-dashoffset: 0;
+    }
+
+    92% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-three {
+    0%,
+    69%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    72% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    75% {
+        opacity: 0.8;
+        stroke-dashoffset: 0;
+    }
+
+    79% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-four {
+    0%,
+    55%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    58% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    61% {
+        opacity: 0.72;
+        stroke-dashoffset: 0;
+    }
+
+    66% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-five {
+    0%,
+    47%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    50% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    54% {
+        opacity: 0.7;
+        stroke-dashoffset: 0;
+    }
+
+    59% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-six {
+    0%,
+    64%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    67% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    71% {
+        opacity: 0.68;
+        stroke-dashoffset: 0;
+    }
+
+    76% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes shooting-star-seven {
+    0%,
+    88%,
+    100% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    91% {
+        opacity: 0;
+        stroke-dashoffset: var(--star-dash);
+    }
+
+    94% {
+        opacity: 0.66;
+        stroke-dashoffset: 0;
+    }
+
+    98% {
+        opacity: 0;
+        stroke-dashoffset: calc(var(--star-dash) * -1);
+    }
+}
+
+@keyframes milky-way-breathe {
+    0%,
+    100% {
+        opacity: 0.58;
+    }
+
+    50% {
+        opacity: 0.88;
+    }
+}
+
+@keyframes sky-wordmark-breathe {
+    0%,
+    100% {
+        opacity: 0.62;
+    }
+
+    50% {
+        opacity: 0.82;
+    }
+}
+
+@keyframes planet-drift-one {
+    0%,
+    100% {
+        opacity: 0.58;
+    }
+
+    50% {
+        opacity: 0.82;
+    }
+}
+
+@keyframes planet-drift-two {
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.72;
+    }
+}
+
+@keyframes sky-band-breathe {
+    0%,
+    100% {
+        opacity: 0.76;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes ambient-twinkle-slow {
+    0%,
+    100% {
+        opacity: 0.34;
+        transform: scale(0.82);
+    }
+
+    48% {
+        opacity: 1;
+        transform: scale(1.16);
+    }
+}
+
+@keyframes ambient-twinkle-soft {
+    0%,
+    100% {
+        opacity: 0.18;
+        transform: scale(0.76);
+    }
+
+    54% {
+        opacity: 0.92;
+        transform: scale(1.22);
+    }
+}
+
+@keyframes ambient-twinkle-bright {
+    0%,
+    100% {
+        opacity: 0.24;
+        transform: scale(0.72);
+    }
+
+    45% {
+        opacity: 1;
+        transform: scale(1.28);
+    }
+
+    72% {
+        opacity: 0.46;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes moon-pulse {
+    0%,
+    100% {
+        opacity: 0.94;
+        transform: scale(0.985);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+}
+
+@keyframes face-drift {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    42% {
+        transform: translate(0, -3px);
+    }
+}
+
+@keyframes eye-soft {
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(0.92);
+    }
+}
+
+@keyframes cheek-soft {
+    0%,
+    100% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.86;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition: none !important;
+    }
+}
+
+
