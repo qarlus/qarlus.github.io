@@ -1,0 +1,229 @@
+<rect x="-1100" y="-300" width="3160" height="1080" fill="url(#sky)" />
+
+                <g class="sky-atmosphere">
+                    <rect x="-1100" y="-300" width="3160" height="1080" fill="url(#upper-sky-haze)" />
+                    <rect x="-1100" y="-300" width="3160" height="1080" fill="url(#moon-sky-haze)" />
+                    <g filter="url(#sky-soft)" opacity="0.72">
+                        <path
+                            class="sky-band band-one"
+                            d="M-1100 102C-954 66 -810 76 -668 114C-526 78 -378 84 -230 122C-84 80 76 86 220 124C360 88 504 94 642 128C786 92 936 96 1082 130C1236 94 1398 101 1542 136C1708 98 1904 108 2060 150V220C1888 174 1700 170 1534 153C1384 178 1228 160 1084 164C932 144 788 178 642 146C500 157 362 161 224 140C84 155 -70 146 -226 152C-378 160 -528 136 -674 156C-820 140 -960 146 -1100 168Z"
+                            fill="url(#soft-violet-band)"
+                        />
+                        <path
+                            class="sky-band band-two"
+                            d="M-1100 202C-962 164 -820 174 -684 210C-544 172 -402 176 -256 216C-112 176 46 184 190 224C330 184 480 190 622 232C760 194 930 202 1094 244C1242 204 1404 214 1548 258C1710 220 1900 232 2060 282V346C1880 292 1708 284 1542 286C1388 260 1242 270 1092 274C930 252 778 280 622 250C474 265 330 266 188 242C42 258 -108 248 -254 255C-412 266 -552 242 -690 260C-834 246 -964 250 -1100 278Z"
+                            fill="#89eaff"
+                            opacity="0.06"
+                        />
+                    </g>
+                </g>
+
+
+                <g class="ambient-stars" filter="url(#ambient-star-glow)">
+                    <g class="milky-way">
+                        <path
+                            class="milky-way-haze"
+                            d="M-92 78C58 28 202 21 342 40C486 60 608 96 748 92C864 88 960 54 1052 18"
+                            fill="none"
+                            stroke="url(#milky-way-fill)"
+                            stroke-width="42"
+                            stroke-linecap="round"
+                        />
+                        <g class="milky-way-specks" fill="#f7fbff">
+                            <circle class="ambient-dot twinkle-soft" cx="206" cy="42" r="0.6" />
+                            <circle class="ambient-dot twinkle-slow" cx="252" cy="33" r="0.45" />
+                            <circle class="ambient-dot twinkle-soft" cx="324" cy="42" r="0.55" />
+                            <circle class="ambient-dot twinkle-slow" cx="468" cy="66" r="0.45" />
+                            <circle class="ambient-dot twinkle-soft" cx="546" cy="82" r="0.6" />
+                            <circle class="ambient-dot twinkle-slow" cx="628" cy="88" r="0.45" />
+                            <circle class="ambient-dot twinkle-soft" cx="760" cy="82" r="0.55" />
+                        </g>
+                    </g>
+                    <g class="star-depth star-depth-back">
+                        <circle class="ambient-dot twinkle-slow" cx="41" cy="102" r="1.8" fill="#fff7b6" />
+                        <circle class="ambient-dot twinkle-soft" cx="172" cy="41" r="1.4" fill="#c8fbff" />
+                        <circle class="ambient-dot twinkle-soft" cx="500" cy="7" r="1.7" fill="#c9f8ff" />
+                        <circle class="ambient-dot twinkle-slow" cx="632" cy="55" r="1.3" fill="#fffbe0" />
+                        <circle class="ambient-dot twinkle-soft" cx="878" cy="34" r="1.8" fill="#d8fbff" />
+                        <circle class="ambient-dot twinkle-slow" cx="918" cy="126" r="1.2" fill="#fff6ba" />
+                        <circle class="ambient-dot twinkle-soft" cx="112" cy="18" r="0.8" fill="#d9fbff" />
+                        <circle class="ambient-dot twinkle-bright" cx="285" cy="76" r="1.1" fill="#fffbe0" />
+                        <circle class="ambient-dot twinkle-slow" cx="354" cy="24" r="0.9" fill="#c9f8ff" />
+                        <circle class="ambient-dot twinkle-soft" cx="742" cy="18" r="0.9" fill="#fff7c8" />
+                        <circle class="ambient-dot twinkle-bright" cx="787" cy="150" r="1.3" fill="#d8ffff" />
+                        <circle class="ambient-dot twinkle-slow" cx="944" cy="74" r="0.9" fill="#fffbe0" />
+                    </g>
+                    <g class="star-depth star-depth-front">
+                        <g transform="translate(116 78)">
+                            <path
+                                class="ambient-star twinkle-bright"
+                                d="M0 -10C2 -3.6 3.6 -2 10 0C3.6 2 2 3.6 0 10C-2 3.6 -3.6 2 -10 0C-3.6 -2 -2 -3.6 0 -10Z"
+                                fill="#f7fbff"
+                            />
+                        </g>
+                        <g transform="translate(386 139)">
+                            <path
+                                class="ambient-star twinkle-soft"
+                                d="M0 -7C1.4 -2.7 2.7 -1.4 7 0C2.7 1.4 1.4 2.7 0 7C-1.4 2.7 -2.7 1.4 -7 0C-2.7 -1.4 -1.4 -2.7 0 -7Z"
+                                fill="#c7fbff"
+                            />
+                        </g>
+                        <g transform="translate(673 138)">
+                            <path
+                                class="ambient-star twinkle-bright"
+                                d="M0 -12C2.4 -4.2 4.2 -2.4 12 0C4.2 2.4 2.4 4.2 0 12C-2.4 4.2 -4.2 2.4 -12 0C-4.2 -2.4 -2.4 -4.2 0 -12Z"
+                                fill="#fffbe6"
+                            />
+                        </g>
+                        <g transform="translate(826 89)">
+                            <path
+                                class="ambient-star twinkle-soft"
+                                d="M0 -8C1.6 -3 3 -1.6 8 0C3 1.6 1.6 3 0 8C-1.6 3 -3 1.6 -8 0C-3 -1.6 -1.6 -3 0 -8Z"
+                                fill="#c8fbff"
+                            />
+                        </g>
+                        <g transform="translate(222 116)">
+                            <path
+                                class="ambient-star twinkle-soft"
+                                d="M0 -5C1 -1.8 1.8 -1 5 0C1.8 1 1 1.8 0 5C-1 1.8 -1.8 1 -5 0C-1.8 -1 -1 -1.8 0 -5Z"
+                                fill="#fffbe6"
+                            />
+                        </g>
+                        <g transform="translate(586 170)">
+                            <path
+                                class="ambient-star twinkle-bright"
+                                d="M0 -6C1.2 -2.2 2.2 -1.2 6 0C2.2 1.2 1.2 2.2 0 6C-1.2 2.2 -2.2 1.2 -6 0C-2.2 -1.2 -1.2 -2.2 0 -6Z"
+                                fill="#f7fbff"
+                            />
+                        </g>
+                        <g transform="translate(722 104)">
+                            <path
+                                class="ambient-star twinkle-soft"
+                                d="M0 -6C1.2 -2.2 2.2 -1.2 6 0C2.2 1.2 1.2 2.2 0 6C-1.2 2.2 -2.2 1.2 -6 0C-2.2 -1.2 -1.2 -2.2 0 -6Z"
+                                fill="#c8fbff"
+                            />
+                        </g>
+                    </g>
+                </g>
+
+                <g class="distant-planets">
+                    <g class="planet planet-one" transform="translate(744 74)">
+                        <circle cx="0" cy="0" r="20" fill="url(#planet-pink-glow)" />
+                        <ellipse
+                            cx="0"
+                            cy="1"
+                            rx="17"
+                            ry="4.2"
+                            fill="none"
+                            stroke="#fff6c9"
+                            stroke-width="1"
+                            opacity="0.24"
+                        />
+                        <circle cx="0" cy="0" r="8" fill="#ffd7f2" opacity="0.58" />
+                        <path d="M-8 1C-3 3 4 3 8 1" fill="none" stroke="#d8fbff" stroke-width="1" opacity="0.2" />
+                    </g>
+                    <g class="planet planet-two" transform="translate(302 36)">
+                        <circle cx="0" cy="0" r="14" fill="url(#planet-cyan-glow)" />
+                        <ellipse
+                            cx="0"
+                            cy="0.8"
+                            rx="11"
+                            ry="3"
+                            fill="none"
+                            stroke="#ffd4f2"
+                            stroke-width="0.9"
+                            opacity="0.22"
+                        />
+                        <circle cx="0" cy="0" r="5.5" fill="#bffbff" opacity="0.48" />
+                    </g>
+                </g>
+
+                <g class="shooting-stars">
+                    <path
+                        class="shooting-star shooting-star-one"
+                        d="M826 62L690 106"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="shooting-star shooting-star-two"
+                        d="M736 34L622 72"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="shooting-star shooting-star-three"
+                        d="M144 68L292 112"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="2.1"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="shooting-star shooting-star-four"
+                        d="M552 28L430 82"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="shooting-star shooting-star-five"
+                        d="M892 132C830 102 774 92 705 104"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        fill="none"
+                    />
+                    <path
+                        class="shooting-star shooting-star-six"
+                        d="M72 122C136 90 206 82 284 98"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        fill="none"
+                    />
+                    <path
+                        class="shooting-star shooting-star-seven"
+                        d="M510 46C462 26 414 28 362 52"
+                        stroke="url(#sparkle-ribbon-gradient)"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        fill="none"
+                    />
+                </g>
+
+                <g class="sky-brushes" filter="url(#cloud-soft)" opacity="0.32">
+                    <path
+                        d="M-1100 88C-958 50 -808 68 -672 104C-532 66 -388 74 -250 110C-108 70 42 78 184 116C326 74 486 72 632 108C780 68 934 82 1082 116C1236 80 1394 86 1540 126C1712 90 1900 96 2060 132V246H-1100Z"
+                        fill="url(#sky-brush)"
+                    />
+                    <path
+                        d="M-1100 214C-960 180 -816 188 -680 224C-540 186 -398 194 -260 232C-112 190 44 200 184 238C326 196 480 208 628 246C770 204 930 214 1088 256C1240 220 1398 232 1546 276C1710 238 1900 248 2060 292V358H-1100Z"
+                        fill="#435beb"
+                        opacity="0.08"
+                    />
+                </g>
+
+                <g class="moon-stars">
+                    <g class="moon" filter="url(#moon-glow)">
+                        <path
+                            class="moon-crescent"
+                            d="M217.2 97.8A40 40 0 1 0 255.6 165.8A43 43 0 0 1 217.2 97.8Z"
+                            fill="url(#moon-fill)"
+                        />
+                        <path
+                            class="moon-inner-rim"
+                            d="M255.6 165.8A43 43 0 0 1 217.2 97.8"
+                            fill="none"
+                            stroke="#fff7bd"
+                            stroke-linecap="round"
+                            stroke-width="2.8"
+                            opacity="0.28"
+                        />
+                        <ellipse cx="193" cy="132" rx="5.5" ry="9" fill="#f2d76d" opacity="0.13" />
+                        <ellipse cx="205" cy="161" rx="8.5" ry="4.4" fill="#f2d76d" opacity="0.1" />
+                        <ellipse cx="205" cy="111" rx="4.8" ry="3.3" fill="#fffbd8" opacity="0.2" />
+                    </g>
+
+                </g>

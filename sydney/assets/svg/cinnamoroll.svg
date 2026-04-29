@@ -1,0 +1,240 @@
+<g class="cinnamoroll">
+                    <ellipse class="ground-glow" cx="508" cy="381" rx="235" ry="55" fill="#5ba6ee" opacity="0.17" />
+
+                    <g class="body-back" filter="url(#fur-glow)">
+                        <path
+                            class="tail-ball"
+                            d="M663 321C676 301 709 302 727 322C746 344 735 373 707 380C681 386 655 368 650 344C648 334 655 326 663 321Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="tail-shadow"
+                            d="M655 350C672 374 714 382 731 355C728 379 697 393 669 376C657 369 651 359 655 350Z"
+                            fill="#efb8e7"
+                            opacity="0.13"
+                        />
+                        <path
+                            class="tail-highlight"
+                            d="M674 316C689 304 715 309 727 329C708 318 682 320 666 337C665 328 668 321 674 316Z"
+                            fill="#efffff"
+                            opacity="0.15"
+                        />
+                        <path
+                            class="tail-inner-puff"
+                            d="M681 332C693 320 715 325 720 341C725 357 709 369 692 363C681 359 677 346 685 339C692 333 702 335 706 343"
+                            fill="#d7fbff"
+                            opacity="0.2"
+                        />
+                        <path
+                            class="tail-curl"
+                            d="M679 331C693 316 721 323 726 343C731 363 707 377 688 365C675 357 678 340 691 335C702 331 713 337 714 348"
+                            fill="none"
+                            stroke="#86d8f1"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                            opacity="0.2"
+                        />
+                        <path
+                            class="back-hump"
+                            d="M455 291C493 250 584 244 644 286C694 321 681 372 620 394C557 416 488 386 457 335C444 314 443 299 455 291Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="back-shade"
+                            d="M474 338C516 389 589 406 650 367C619 404 531 414 480 361C467 348 462 337 474 338Z"
+                            fill="#efb8e7"
+                            opacity="0.12"
+                        />
+                        <path
+                            class="back-highlight"
+                            d="M479 291C519 260 585 262 631 293C575 278 515 279 473 313C469 303 471 296 479 291Z"
+                            fill="#efffff"
+                            opacity="0.1"
+                        />
+                        <path
+                            class="rear-foot"
+                            d="M618 366C637 356 668 361 684 377C697 390 682 403 650 402C622 401 604 391 609 379C611 373 614 369 618 366Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="rear-foot-shadow"
+                            d="M612 391C628 402 665 403 680 391C674 407 629 410 613 399C609 397 609 394 612 391Z"
+                            fill="#efb8e7"
+                            opacity="0.09"
+                        />
+                    </g>
+
+                    <g class="left-ear-group" filter="url(#fur-glow)">
+                        <g class="left-ear-rest">
+                            <path
+                                class="left-ear"
+                                d="M334 248C305 252 281 276 262 312C243 348 224 382 228 405C232 430 260 431 296 400C333 369 363 321 377 287C385 268 367 249 344 247C341 247 337 247 334 248Z"
+                                fill="url(#fur)"
+                            />
+                            <path
+                                class="cool-edge left-ear-edge"
+                                d="M326 254C298 279 274 322 248 372C240 388 235 403 236 416"
+                            />
+                            <path
+                                class="left-ear-root-shadow"
+                                d="M345 255C329 274 323 303 330 329C350 310 368 287 378 274C373 263 361 256 345 255Z"
+                                fill="#89d8f1"
+                                opacity="0.1"
+                            />
+                        </g>
+                        <g class="left-ear-rise">
+                            <path
+                                class="left-ear"
+                                d="M330 178C365 183 386 224 383 264C379 303 350 319 318 297C287 276 275 235 285 204C292 184 307 174 330 178Z"
+                                fill="url(#fur)"
+                            />
+                        </g>
+                    </g>
+
+                    <g class="head-group" filter="url(#fur-glow)">
+                        <path
+                            class="head"
+                            d="M304 323C302 278 337 238 394 220C457 200 523 214 558 253C588 287 579 330 540 359C497 391 413 389 348 361C321 349 305 336 304 323Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="head-ear-overlap"
+                            d="M512 238C533 241 556 252 572 268C545 260 519 266 500 286C499 266 503 247 512 238Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="belly-shade"
+                            d="M317 339C356 374 447 386 525 364C482 397 380 390 331 360C321 354 316 346 317 339Z"
+                            fill="#eeb6eb"
+                            opacity="0.08"
+                        />
+                        <path
+                            class="head-highlight"
+                            d="M337 261C377 227 454 214 522 238C456 234 392 249 354 289C341 302 333 318 330 333C318 314 319 279 337 261Z"
+                            fill="#eaffff"
+                            opacity="0.22"
+                        />
+                        <path
+                            class="head-lower-rim"
+                            d="M329 351C371 382 460 391 526 364"
+                            fill="none"
+                            stroke="#efb8e7"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            opacity="0.12"
+                        />
+                        <path
+                            class="chin-soft-light"
+                            d="M351 361C398 378 472 379 522 359C482 389 398 388 351 361Z"
+                            fill="#efffff"
+                            opacity="0.08"
+                        />
+                    </g>
+
+                    <g class="front-paws" filter="url(#fur-glow)">
+                        <path
+                            class="under-body"
+                            d="M330 362C384 387 486 390 552 354C524 397 392 407 332 377C322 372 321 366 330 362Z"
+                            fill="url(#fur)"
+                            opacity="0.34"
+                        />
+                        <path
+                            class="under-body-shadow"
+                            d="M338 375C393 399 488 400 543 370C510 406 393 413 338 386C330 382 330 377 338 375Z"
+                            fill="#efb8e7"
+                            opacity="0.09"
+                        />
+                        <path
+                            class="front-paw-shadow left-front-paw-shadow"
+                            d="M310 376C330 389 365 388 382 376C373 396 327 399 309 386C304 383 305 379 310 376Z"
+                            fill="#efb8e7"
+                            opacity="0.14"
+                        />
+                        <path
+                            class="front-paw left-front-paw"
+                            d="M323 352C344 340 377 347 390 363C402 378 383 392 350 390C320 389 301 376 310 362C313 357 317 354 323 352Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="front-paw-highlight left-front-paw-highlight"
+                            d="M322 357C341 348 366 352 379 364C355 360 329 363 312 374C312 367 316 361 322 357Z"
+                            fill="#eaffff"
+                            opacity="0.1"
+                        />
+                        <path
+                            class="front-paw-crease left-front-paw-crease"
+                            d="M333 374C345 371 357 372 365 377"
+                            fill="none"
+                        />
+
+                        <path
+                            class="front-paw-shadow right-front-paw-shadow"
+                            d="M405 392C429 407 480 407 496 392C488 414 430 417 406 403C400 400 400 396 405 392Z"
+                            fill="#efb8e7"
+                            opacity="0.14"
+                        />
+                        <path
+                            class="front-paw right-front-paw"
+                            d="M417 368C439 357 475 363 493 379C510 394 494 408 456 407C423 407 400 397 405 383C407 376 412 372 417 368Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="front-paw-highlight right-front-paw-highlight"
+                            d="M417 374C438 365 467 369 483 382C456 378 428 381 408 393C407 386 411 379 417 374Z"
+                            fill="#eaffff"
+                            opacity="0.1"
+                        />
+                        <path
+                            class="front-paw-crease right-front-paw-crease"
+                            d="M437 391C451 388 465 390 474 396"
+                            fill="none"
+                        />
+                    </g>
+
+                    <g class="front-ear">
+                        <path
+                            class="right-ear"
+                            d="M540 249C576 251 609 295 622 353C637 423 599 462 559 432C529 409 516 350 524 299C528 273 535 254 540 249Z"
+                            fill="url(#fur)"
+                        />
+                        <path
+                            class="right-ear-highlight"
+                            d="M546 263C570 271 591 304 599 346C607 390 593 423 566 429C582 399 582 341 570 301C563 281 554 267 546 263Z"
+                            fill="#eaffff"
+                            opacity="0.08"
+                        />
+                        <path
+                            class="right-ear-lower-separation"
+                            d="M532 346C535 383 546 415 565 431"
+                            fill="none"
+                        />
+                        <path
+                            class="right-ear-body-seam"
+                            d="M584 278C611 310 626 376 607 415C599 432 585 438 566 432"
+                            fill="none"
+                        />
+                        <path
+                            class="cool-edge right-ear-edge"
+                            d="M535 282C524 330 535 392 562 429"
+                        />
+                    </g>
+
+                    <g class="face">
+                        <ellipse class="eye eye-left" cx="378" cy="304" rx="6.4" ry="13" fill="#7a9bec" />
+                        <ellipse class="eye eye-right" cx="455" cy="314" rx="6.7" ry="13.4" fill="#7a9bec" />
+                        <ellipse class="eye-glint eye-left-glint" cx="375.6" cy="298.3" rx="1.4" ry="2.5" fill="#dff7ff" opacity="0.38" />
+                        <ellipse class="eye-glint eye-right-glint" cx="452.4" cy="308.1" rx="1.4" ry="2.5" fill="#dff7ff" opacity="0.38" />
+                        <ellipse class="cheek cheek-left" cx="340" cy="324" rx="12.5" ry="10.5" fill="#f4aee3" opacity="0.72" />
+                        <ellipse class="cheek cheek-right" cx="492" cy="342" rx="12.5" ry="10.5" fill="#f4aee3" opacity="0.72" />
+                        <path
+                            class="mouth"
+                            d="M394.2 346.3C396.6 347.6 398.9 348.5 401.1 347.1C402.8 346 404.6 347.8 406.1 349.2C408 351 410.6 350.8 412.7 349.2"
+                            fill="none"
+                            stroke="#7f9edd"
+                            stroke-width="1.35"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            opacity="0.72"
+                        />
+                    </g>
+                </g>
